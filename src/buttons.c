@@ -3,7 +3,7 @@
 #include "buttons.h"
 #include "millis.h"
 
-static const millis_t debounce_ms = 30;
+static const millis_t debounce_ms = 20;
 
 void button_init(Button *button, vui8 *DDR, vui8 *PORT, vui8 *PIN, int pin_number){
     button->DDRx = DDR;
