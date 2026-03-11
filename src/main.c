@@ -53,7 +53,7 @@ int main(void){
 
         if(now - last_tick >= interval){
             for(uint8_t i = 0; i < NUM_SLIDERS; i++){
-                char buff[16];
+                char buff[17];
                 sprintf(buff, "Slider %u: %lu%%", i, ((uint32_t)sliders[i]*100)/1023);
                 uart_send_str_endl(buff);
             }
